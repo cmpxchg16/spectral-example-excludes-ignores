@@ -1,0 +1,19 @@
+reporter:
+    outputs:
+        stylish: {}        # nice looking CLI reports
+
+projects:
+    default:
+        project:
+            name: default
+        input:
+            - local: ../src
+              name: sources
+        rules:
+            roots:
+            - rules
+            exclude:
+                ids:
+                - CLD001
+                tags: []
+            
